@@ -2,20 +2,22 @@
 
 **Git** es una herramienta que permite llevar el control de versiones de un proyecto, facilitando el trabajo colaborativo y el seguimiento de los cambios en el código.
 
+## 1 Clonación del repositorio
+![Clonación del repositorio](./capturas/init.png)
+
 ## 🟢 git init  
 Inicializa un nuevo repositorio en la carpeta actual.  
 Crea una carpeta oculta llamada `.git` donde se guarda el historial del proyecto.
 ```bash
 git init
+
 🟢 git add
 Agrega los archivos modificados al área de preparación (staging area).
 
 bash
 Copiar código
-# Agregar un archivo específico
-git add archivo.txt
 
-# Agregar todos los archivos
+git add archivo.txt
 git add .
 🟢 git commit
 Guarda los cambios confirmados en el historial del repositorio, con un mensaje descriptivo.
