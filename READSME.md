@@ -95,4 +95,13 @@ Borra un archivo tanto del área de trabajo como del repositorio.
 ## commit
 ![commit](./capturas/commit.png)
 
+## 1
+![1](./capturas/1.png)
+
+## 2
+![2](./capturas/2.png)
+
+## 3
+![3](./capturas/3.png)
+
 ´´´
