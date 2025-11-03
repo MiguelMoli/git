@@ -1,108 +1,90 @@
-# Los principales comandos que se utilizan en Git
+# Principales comandos de Git
 
-**Git** es una herramienta que permite llevar el control de versiones de un proyecto, facilitando el trabajo colaborativo y el seguimiento de los cambios en el código.
+En este cuaderno aprenderás los comandos básicos de **Git**, con explicaciones y ejemplos prácticos.
 
-## 1 Clonación del repositorio
-![Clonación del repositorio](./capturas/init.png)
 
-## 🟢 git init  
-Inicializa un nuevo repositorio en la carpeta actual.  
-Crea una carpeta oculta llamada `.git` donde se guarda el historial del proyecto.
-```bash
-git init
+# 🔹 1. Inicializar un repositorio
 
-🟢 git add
-Agrega los archivos modificados al área de preparación (staging area).
+Crea un nuevo repositorio Git en la carpeta actual.
 
-bash
-Copiar código
+!git init
 
-git add archivo.txt
-git add .
-🟢 git commit
-Guarda los cambios confirmados en el historial del repositorio, con un mensaje descriptivo.
 
-bash
-Copiar código
-git commit -m "Agrego el archivo de configuración"
-🟢 git status
-Muestra el estado actual del repositorio: qué archivos han sido modificados o están listos para commit.
+# 🔹 2. Clonar un repositorio
 
-bash
-Copiar código
-git status
-🟢 git log
-Muestra el historial de commits realizados, con autor, fecha y mensaje.
+Descarga una copia de un repositorio remoto (por ejemplo, de GitHub).
 
-bash
-Copiar código
-git log
-🟢 git branch
-Permite listar, crear o eliminar ramas del proyecto.
+!git clone https://github.com/MiguelMoli/docker.git
 
-bash
-Copiar código
-# Listar ramas
-git branch
 
-# Crear una nueva rama
-git branch nueva-rama
-🟢 git checkout
-Permite cambiar de una rama a otra o restaurar versiones anteriores de archivos.
+# 🔹 3. Agregar archivos al área de preparación
 
-bash
-Copiar código
-git checkout main
-🟢 git merge
-Combina los cambios de una rama con otra.
+Selecciona los archivos que deseas incluir en el próximo commit.
 
-bash
-Copiar código
-git merge nueva-rama
-🟢 git remote add origin
-Conecta el repositorio local con un repositorio remoto (por ejemplo, en GitHub).
+!git add archivo.txt
 
-bash
-Copiar código
-git remote add origin https://github.com/usuario/repositorio.git
-🟢 git push
-Envía los commits locales al repositorio remoto (sube tus cambios a GitHub).
 
-bash
-Copiar código
-git push -u origin main
-🟢 git pull
-Descarga y combina los cambios desde el repositorio remoto al local.
+# Para agregar todos los archivos modificados:
+!git add .
 
-bash
-Copiar código
-git pull origin main
-🚀 Pasos para enviar tu proyecto a GitHub
-Inicializa el repositorio local
+# 🔹 4. Ver el estado actual del repositorio
 
-bash
-Copiar código
-git init
-Agrega los archivos del proyecto
+Muestra qué archivos han cambiado, están listos para commit o no están rastreados.
 
-bash
-Copiar código
-git add .
-Confirma los cambios con un mensaje
+!git status
 
-bash
-Copiar código
-git commit -m "Primer commit del proyecto"
-Conecta tu repositorio local con GitHub
-(Copia el enlace de tu repositorio desde GitHub)
+# 🔹 5. Guardar los cambios en un commit
 
-bash
-Copiar código
-git remote add origin https://github.com/usuario/repositorio.git
-Sube los cambios a GitHub
+Registra los cambios con un mensaje descriptivo.
+!git commit -m "Agregué la sección de contacto al sitio web"
 
-bash
-Copiar código
-git push -u origin main
+# 🔹 6. Ver el historial de commits
+Muestra todos los commits realizados en el repositorio.
+!git log
 
-nn
+# 🔹 7. Crear y listar ramas
+Permite trabajar en versiones paralelas del proyecto.
+!git branch
+!git branch nueva-rama
+
+#  8. Cambiar de rama
+Cambia a una rama existente.
+!git checkout nueva-rama
+
+#  9. Fusionar ramas
+Combina los cambios de una rama con la actual.
+!git merge nueva-rama
+
+#  10. Conectar con un repositorio remoto
+Vincula el repositorio local con uno alojado en GitHub o GitLab.
+!git remote add origin https://github.com/usuario/nombre-repositorio.git
+
+
+#  11. Subir los cambios al repositorio remoto
+Envía tus commits al repositorio en GitHub.
+!git push -u origin main
+
+#  12. Descargar los cambios del repositorio remoto
+Actualiza tu repositorio local con los cambios más recientes.
+!git pull origin main
+markdown
+
+#  13. Ver diferencias entre archivos
+Muestra las diferencias entre lo modificado y lo último guardado.
+!git diff
+
+#  14. Eliminar archivos del repositorio
+Borra un archivo tanto del área de trabajo como del repositorio.
+!git rm archivo.txt
+
+# Esta es la evidencia de como lo hice
+
+## add
+![add](./add.png)
+
+## branch
+![branch](./branch.png)
+
+## init
+![init](./init.png)
+
