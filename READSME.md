@@ -77,14 +77,22 @@ Muestra las diferencias entre lo modificado y lo último guardado.
 Borra un archivo tanto del área de trabajo como del repositorio.
 !git rm archivo.txt
 
+´´´
 # Esta es la evidencia de como lo hice
-
-## add
-![add](./add.png)
+´´´
+## init
+![init](./capturas/init.png)
 
 ## branch
-![branch](./branch.png)
+![branch](./capturas/branch.png)
 
-## init
-![init](./init.png)
+## add
+![add](./capturas/add.png)
 
+## push 
+![push](./capturas/push 2.png)
+
+## commit
+![commit](./capturas/commit.png)
+
+´´´
